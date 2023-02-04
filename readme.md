@@ -1,1 +1,1 @@
-https://ismet0665.github.io/JavaScript-Projeler/checkout/
+https://ismet0665.github.io/Checkout/
