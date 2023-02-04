@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+.container {
+  width: 50%;
+  /* border: 1px solid red; */
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: #eeeeee;
+  padding-bottom: 1rem;
+}
+.product {
+  width: 50vw;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.product-data {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+}
+
+.product-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  gap: 2rem;
+  margin: auto 0;
+  padding: 0.7rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+.product-control button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgb(90, 89, 89);
+  cursor: pointer;
+}
+.product-control button:hover {
+  transform: scale(0.9);
+}
+.remove {
+  width: 7rem;
+  height: 2rem;
+  background-color: #cc6666;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+}
+.remove:hover {
+  background-color: brown;
+}
+
+.line-through {
+  text-decoration: line-through;
+  padding-left: 0.7rem;
+}
+.line-through::before {
+  content: "$";
+}
+strong {
+  font-size: x-large;
+  color: #f2994a;
+}
+strong::before {
+  content: "$";
+}
+
+.product-total {
+  font-size: x-large;
+}
+.total::before {
+  content: "$";
+}
+img {
+  border-radius: 0.8rem;
+  width: 275px;
+  height: 275px;
+}
+.box {
+  border-top: 1px solid rgba(0, 0, 0, 0.534);
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+}
+.box p:nth-child(2)::before {
+  content: "$";
+}
+.total-box {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
